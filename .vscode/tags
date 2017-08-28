@@ -1,0 +1,82 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Command	../envoy\__init__.py	/^from .core import Command, ConnectedCommand, Response$/;"	kind:namespace	line:3
+Command	../envoy\core.py	/^class Command(object):$/;"	kind:class	line:49
+ConnectedCommand	../envoy\__init__.py	/^from .core import Command, ConnectedCommand, Response$/;"	kind:namespace	line:3
+ConnectedCommand	../envoy\core.py	/^class ConnectedCommand(object):$/;"	kind:class	line:104
+ConnectedCommandTests	../test_envoy.py	/^class ConnectedCommandTests(unittest.TestCase):$/;"	kind:class	line:35
+Response	../envoy\__init__.py	/^from .core import Command, ConnectedCommand, Response$/;"	kind:namespace	line:3
+Response	../envoy\core.py	/^class Response(object):$/;"	kind:class	line:154
+SimpleTest	../test_envoy.py	/^class SimpleTest(unittest.TestCase):$/;"	kind:class	line:6
+__author__	../envoy\core.py	/^__author__ = 'Kenneth Reitz'$/;"	kind:variable	line:21
+__enter__	../envoy\core.py	/^    def __enter__(self):$/;"	kind:member	line:117
+__exit__	../envoy\core.py	/^    def __exit__(self, type, value, traceback):$/;"	kind:member	line:120
+__init__	../envoy\core.py	/^    def __init__(self, cmd):$/;"	kind:member	line:50
+__init__	../envoy\core.py	/^    def __init__(self, process=None):$/;"	kind:member	line:157
+__init__	../envoy\core.py	/^    def __init__(self,$/;"	kind:member	line:105
+__init__.py	../envoy\__init__.py	1;"	kind:file	line:1
+__license__	../envoy\core.py	/^__license__ = 'MIT'$/;"	kind:variable	line:20
+__repr__	../envoy\core.py	/^    def __repr__(self):$/;"	kind:member	line:168
+__version__	../envoy\__init__.py	/^from .core import __version__$/;"	kind:namespace	line:6
+__version__	../envoy\core.py	/^__version__ = '0.0.3'$/;"	kind:variable	line:19
+_is_alive	../envoy\core.py	/^def _is_alive(thread):$/;"	kind:function	line:42
+_kill_process	../envoy\core.py	/^def _kill_process(process):$/;"	kind:function	line:35
+_terminate_process	../envoy\core.py	/^def _terminate_process(process):$/;"	kind:function	line:24
+author	../setup.py	/^    author='Kenneth Reitz',$/;"	kind:variable	line:26
+author_email	../setup.py	/^    author_email='me@kennethreitz.com',$/;"	kind:variable	line:27
+block	../envoy\core.py	/^    def block(self):$/;"	kind:member	line:148
+classifiers	../setup.py	/^    classifiers=($/;"	kind:variable	line:32
+connect	../envoy\__init__.py	/^from .core import expand_args, run, connect$/;"	kind:namespace	line:4
+connect	../envoy\core.py	/^def connect(command, data=None, env=None, cwd=None):$/;"	kind:function	line:235
+core.py	../envoy\core.py	1;"	kind:file	line:1
+ctypes	../envoy\core.py	/^        import ctypes$/;"	kind:namespace	line:26
+description	../setup.py	/^    description='Simple API for running external processes.',$/;"	kind:variable	line:24
+envoy	../setup.py	/^import envoy$/;"	kind:namespace	line:6
+envoy	../test_envoy.py	/^import envoy$/;"	kind:namespace	line:2
+expand_args	../envoy\__init__.py	/^from .core import expand_args, run, connect$/;"	kind:namespace	line:4
+expand_args	../envoy\core.py	/^def expand_args(command):$/;"	kind:function	line:175
+expect	../envoy\core.py	/^    def expect(self, bytes, stream=None):$/;"	kind:member	line:139
+install_requires	../setup.py	/^    install_requires=required,$/;"	kind:variable	line:30
+kill	../envoy\core.py	/^    def kill(self):$/;"	kind:member	line:135
+license	../setup.py	/^    license='MIT',$/;"	kind:variable	line:31
+long_description	../setup.py	/^    long_description=open('README.rst').read(),$/;"	kind:variable	line:25
+name	../setup.py	/^    name='envoy',$/;"	kind:variable	line:22
+os	../envoy\core.py	/^import os$/;"	kind:namespace	line:10
+os	../setup.py	/^import os$/;"	kind:namespace	line:4
+packages	../setup.py	/^    packages= ['envoy'],$/;"	kind:variable	line:29
+pid	../envoy\core.py	/^    def pid(self):$/;"	kind:member	line:131
+required	../setup.py	/^required = []$/;"	kind:variable	line:19
+run	../envoy\__init__.py	/^from .core import expand_args, run, connect$/;"	kind:namespace	line:4
+run	../envoy\core.py	/^    def run(self, data, timeout, kill_timeout, env, cwd):$/;"	kind:member	line:59
+run	../envoy\core.py	/^def run(command, data=None, timeout=None, kill_timeout=None, env=None, cwd=None):$/;"	kind:function	line:197
+send	../envoy\core.py	/^    def send(self, str, end='\\n'):$/;"	kind:member	line:144
+setup	../setup.py	/^    from distutils.core import setup$/;"	kind:namespace	line:11
+setup	../setup.py	/^    from setuptools import setup$/;"	kind:namespace	line:9
+setup.py	../setup.py	1;"	kind:file	line:1
+shlex	../envoy\core.py	/^import shlex$/;"	kind:namespace	line:12
+signal	../envoy\core.py	/^import signal$/;"	kind:namespace	line:13
+status_code	../envoy\core.py	/^    def status_code(self):$/;"	kind:member	line:124
+subprocess	../envoy\core.py	/^import subprocess$/;"	kind:namespace	line:14
+sys	../envoy\core.py	/^import sys$/;"	kind:namespace	line:11
+sys	../setup.py	/^import sys$/;"	kind:namespace	line:5
+target	../envoy\core.py	/^        def target():$/;"	kind:function	line:64
+test_envoy.py	../test_envoy.py	1;"	kind:file	line:1
+test_input	../test_envoy.py	/^    def test_input(self):$/;"	kind:member	line:50
+test_input	../test_envoy.py	/^    def test_input(self):$/;"	kind:member	line:8
+test_non_existing_command	../test_envoy.py	/^    def test_non_existing_command(self):$/;"	kind:member	line:30
+test_pipe	../test_envoy.py	/^    def test_pipe(self):$/;"	kind:member	line:13
+test_quoted_args	../test_envoy.py	/^    def test_quoted_args(self):$/;"	kind:member	line:24
+test_status_code_failure	../test_envoy.py	/^    def test_status_code_failure(self):$/;"	kind:member	line:46
+test_status_code_none	../test_envoy.py	/^    def test_status_code_none(self):$/;"	kind:member	line:37
+test_status_code_success	../test_envoy.py	/^    def test_status_code_success(self):$/;"	kind:member	line:41
+test_timeout	../test_envoy.py	/^    def test_timeout(self):$/;"	kind:member	line:18
+threading	../envoy\core.py	/^import threading$/;"	kind:namespace	line:15
+time	../test_envoy.py	/^import time$/;"	kind:namespace	line:3
+traceback	../envoy\core.py	/^import traceback$/;"	kind:namespace	line:16
+unittest	../test_envoy.py	/^import unittest$/;"	kind:namespace	line:1
+url	../setup.py	/^    url='https:\/\/github.com\/kennethreitz\/envoy',$/;"	kind:variable	line:28
+version	../setup.py	/^    version=envoy.__version__,$/;"	kind:variable	line:23

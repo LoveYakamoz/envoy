@@ -77,7 +77,8 @@ class Command(object):
 
                 if sys.version_info[0] >= 3:
                     self.out, self.err = self.process.communicate(
-                        input = bytes(self.data, "UTF-8") if self.data else None
+                        #input = bytes(self.data, "UTF-8") if self.data else None
+                        input = (self.data) if self.data else None
                     )
                 else:
                     self.out, self.err = self.process.communicate(self.data)
@@ -176,8 +177,10 @@ def expand_args(command):
     """Parses command strings and returns a Popen-ready list."""
 
     # Prepare arguments.
-    if isinstance(command, (str, unicode)):
-        splitter = shlex.shlex(command.encode('utf-8'))
+    #if isinstance(command, (str, unicode)):
+    if isinstance(command, str):
+        #splitter = shlex.shlex(command.encode('utf-8'))
+        splitter = shlex.shlex(command)
         splitter.whitespace = '|'
         splitter.whitespace_split = True
         command = []
@@ -198,19 +201,17 @@ def run(command, data=None, timeout=None, kill_timeout=None, env=None, cwd=None)
     """Executes a given commmand and returns Response.
 
     Blocks until process is complete, or timeout is reached.
-    """
-
+    """    
     command = expand_args(command)
-
     history = []
     for c in command:
-
         if len(history):
             # due to broken pipe problems pass only first 10 KiB
             data = history[-1].std_out[0:10*1024]
 
         cmd = Command(c)
         try:
+
             out, err = cmd.run(data, timeout, kill_timeout, env, cwd)
             status_code = cmd.returncode
         except OSError as e:
